@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -46,6 +47,31 @@ public class MainActivity extends AppCompatActivity {
                     startActivity(intent_list);
                 }
             }
+
+            import java.util.Scanner;
+
+            public class TambahUmur {
+                public static void main(String[] args) {
+                    Scanner input = new Scanner(System.in);
+
+                    System.out.print("Masukkan umur: ");
+                    int umur = input.nextInt();
+
+                    if (umur <= 10) {
+                        System.out.println("Umur anda adalah anak");
+                    } else if (umur <= 20) {
+                        System.out.println("Umur anda adalah remaja");
+                    } else if (umur <= 40) {
+                        System.out.println("Umur anda adalah dewasa");
+                    } else if (umur <= 60) {
+                        System.out.println("Umur anda adalah lansia");
+                    } else {
+                        System.out.println("Umur anda adalah tua");
+                    }
+
+                }
+            }
+
         });
     }
 }
